@@ -23,8 +23,15 @@ class _HomeprincipalState extends State<Homeprincipal> {
         onTap: () {
           showModalBottomSheet(
             context: context,
+            isScrollControlled: true,
             builder: (context) {
-              return Text("ADSO 3186666");
+              return Scaffold(
+                appBar: AppBar(
+                  title: Text("datos personales"),
+                  backgroundColor: Colors.green,
+                ),
+                body: Text("contenido de los datos personales"),
+              );
             },
           );
         },
