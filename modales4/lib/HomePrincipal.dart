@@ -21,7 +21,12 @@ class _HomeprincipalState extends State<Homeprincipal> {
         trailing: Icon(Icons.arrow_circle_right_outlined),
         leading: Icon(Icons.person_2_outlined),
         onTap: () {
-          showModalBottomSheet(context: context, builder: builder)
+          showModalBottomSheet(
+            context: context,
+            builder: (context) {
+              return Text("ADSO 3186666");
+            },
+          );
         },
       ),
     );
