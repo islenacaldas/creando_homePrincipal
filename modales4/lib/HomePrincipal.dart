@@ -52,7 +52,20 @@ class _HomeprincipalState extends State<Homeprincipal> {
                       title: Text("Estudios realizados"),
                       backgroundColor: Colors.green,
                     ),
-                    body: Text("contenido de los datos personales"),
+                    body: Column(
+                      children: [
+                        ListTile(
+                          title: Text("ingenieria de sistemas"),
+                          subtitle: Text("universidad san marino"),
+                          leading: Icon(Icons.book),
+                        ),
+                        ListTile(
+                          title: Text("especializacion en bases de datos"),
+                          subtitle: Text("SENA"),
+                          leading: Icon(Icons.book_online),
+                        ),
+                      ],
+                    ),
                   );
                 },
               );
