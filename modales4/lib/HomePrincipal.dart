@@ -20,6 +20,9 @@ class _HomeprincipalState extends State<Homeprincipal> {
         title: Text("Datos Personales"),
         trailing: Icon(Icons.arrow_circle_right_outlined),
         leading: Icon(Icons.person_2_outlined),
+        onTap: () {
+          showModalBottomSheet(context: context, builder: builder)
+        },
       ),
     );
   }
